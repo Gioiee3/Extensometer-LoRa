@@ -1,0 +1,17 @@
+../Core/Src/main.c:45:5:__io_putchar	1
+../Core/Src/main.c:254:6:modbus_tx_data	1
+../Core/Src/main.c:283:6:modbus_tx_extenso	1
+../Core/Src/main.c:318:5:main	6
+../Core/Src/main.c:434:6:SystemClock_Config	4
+../Core/Src/main.c:480:6:HAL_UARTEx_RxEventCallback	1
+../Core/Src/main.c:488:6:read_ADC	2
+../Core/Src/main.c:511:6:read_sensor_extenso	3
+../Core/Src/main.c:530:6:going_standby	4
+../Core/Src/main.c:590:6:is_OK_2_Talk	8
+../Core/Src/main.c:614:6:Link_Mode_Handle	4
+../Core/Src/main.c:654:6:Normal_Mode_Handle	5
+../Core/Src/main.c:714:6:Reconnect_Mode_Handle	4
+../Core/Src/main.c:746:6:Response_Handle	23
+../Core/Src/main.c:830:6:HAL_GPIO_EXTI_Callback	4
+../Core/Src/main.c:838:6:HAL_RTCEx_RTCEventCallback	1
+../Core/Src/main.c:849:6:Error_Handler	1

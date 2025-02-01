@@ -1,0 +1,17 @@
+../Core/Src/main.c:45:5:__io_putchar	16	static
+../Core/Src/main.c:254:6:modbus_tx_data	24	static
+../Core/Src/main.c:283:6:modbus_tx_extenso	24	static
+../Core/Src/main.c:318:5:main	8	static
+../Core/Src/main.c:434:6:SystemClock_Config	88	static
+../Core/Src/main.c:480:6:HAL_UARTEx_RxEventCallback	16	static
+../Core/Src/main.c:488:6:read_ADC	24	static
+../Core/Src/main.c:511:6:read_sensor_extenso	8	static
+../Core/Src/main.c:530:6:going_standby	24	static,ignoring_inline_asm
+../Core/Src/main.c:590:6:is_OK_2_Talk	16	static
+../Core/Src/main.c:614:6:Link_Mode_Handle	24	static
+../Core/Src/main.c:654:6:Normal_Mode_Handle	32	static
+../Core/Src/main.c:714:6:Reconnect_Mode_Handle	8	static
+../Core/Src/main.c:746:6:Response_Handle	24	static
+../Core/Src/main.c:830:6:HAL_GPIO_EXTI_Callback	16	static
+../Core/Src/main.c:838:6:HAL_RTCEx_RTCEventCallback	16	static
+../Core/Src/main.c:849:6:Error_Handler	4	static,ignoring_inline_asm
