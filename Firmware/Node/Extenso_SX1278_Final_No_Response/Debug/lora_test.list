@@ -39,13 +39,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_line   00013f98  00000000  00000000  00037de5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0008f317  00000000  00000000  0004bd7d  2**0
+ 18 .debug_str    0008f330  00000000  00000000  0004bd7d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000db094  2**0
+ 19 .comment      00000043  00000000  00000000  000db0ad  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00003f0c  00000000  00000000  000db0d8  2**2
+ 20 .debug_frame  00003f0c  00000000  00000000  000db0f0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000004e  00000000  00000000  000defe4  2**0
+ 21 .debug_line_str 0000004e  00000000  00000000  000deffc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -2565,13 +2565,13 @@ void going_standby(void)
  80019da:	2b04      	cmp	r3, #4
  80019dc:	d104      	bne.n	80019e8 <going_standby+0x48>
   {
-		timeAlarm.AlarmTime.Seconds += 2;
- 80019de:	79bb      	ldrb	r3, [r7, #6]
+//		timeAlarm.AlarmTime.Seconds += 2;
+	  timeAlarm.AlarmTime.Minutes += SLEEPTIME_NORMAL_MODE_MIN; // + thoi gian cua chu ky
+ 80019de:	797b      	ldrb	r3, [r7, #5]
  80019e0:	3302      	adds	r3, #2
  80019e2:	b2db      	uxtb	r3, r3
- 80019e4:	71bb      	strb	r3, [r7, #6]
+ 80019e4:	717b      	strb	r3, [r7, #5]
  80019e6:	e010      	b.n	8001a0a <going_standby+0x6a>
-//	  timeAlarm.AlarmTime.Minutes += SLEEPTIME_NORMAL_MODE_MIN; // + thoi gian cua chu ky
   }
   else if (myStatus == LINK_MODE)
  80019e8:	4b23      	ldr	r3, [pc, #140]	@ (8001a78 <going_standby+0xd8>)

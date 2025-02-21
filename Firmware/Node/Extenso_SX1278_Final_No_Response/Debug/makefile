@@ -63,8 +63,8 @@ all: main-build
 main-build: lora_test.elf secondary-outputs
 
 # Tool invocations
-lora_test.elf lora_test.map: $(OBJS) $(USER_OBJS) D:\STM32\CUbe\ MX\Extenso_SX1278_Final_No_Response\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "lora_test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\STM32\CUbe MX\Extenso_SX1278_Final_No_Response\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lora_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+lora_test.elf lora_test.map: $(OBJS) $(USER_OBJS) D:\Github\Extensometer-LoRa\Firmware\Node\Extenso_SX1278_Final_No_Response\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "lora_test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Github\Extensometer-LoRa\Firmware\Node\Extenso_SX1278_Final_No_Response\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lora_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

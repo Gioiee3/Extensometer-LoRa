@@ -140,7 +140,7 @@ typedef enum NodeStatus
 #define DATA_PACKET_ID              (0x4A4AU)
 #define RESPONSE_PACKET_ID          (0x4444U)
 
-#define SLEEPTIME_NORMAL_MODE_MIN   (3U)
+#define SLEEPTIME_NORMAL_MODE_MIN   (2U)
 #define SLEEPTIME_NORMAL_MODE_SEC   (300U)
 #define SLEEPTIME_LINK_MODE_MIN     (1U)
 #define SLEEPTIME_RETRY_MODE_SEC    (10U)
@@ -544,8 +544,8 @@ void going_standby(void)
   timeAlarm.AlarmTime = timeNow; // luu thoi gian hien tai
   if (myStatus == NORMAL_MODE)
   {
-		timeAlarm.AlarmTime.Seconds += 2;
-//	  timeAlarm.AlarmTime.Minutes += SLEEPTIME_NORMAL_MODE_MIN; // + thoi gian cua chu ky
+//		timeAlarm.AlarmTime.Seconds += 2;
+	  timeAlarm.AlarmTime.Minutes += SLEEPTIME_NORMAL_MODE_MIN; // + thoi gian cua chu ky
   }
   else if (myStatus == LINK_MODE)
       {
