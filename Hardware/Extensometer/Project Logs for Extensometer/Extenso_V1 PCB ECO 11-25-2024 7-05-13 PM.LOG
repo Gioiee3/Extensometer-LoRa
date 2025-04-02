@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=Sensor Old Footprint=JP5-C1T New Footprint=KF5-5
+Added Pin To Net: NetName=3V3 Pin=U2-21
+Added Member To Class: ClassName=Hard_Node Member=Component JDC1 BAT
+Added Member To Class: ClassName=Hard_Node Member=Component JDC2 BATTERY
+Added Room: Name=Hard_Node

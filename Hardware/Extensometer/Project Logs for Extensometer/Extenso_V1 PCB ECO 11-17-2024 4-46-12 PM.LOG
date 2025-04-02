@@ -1,0 +1,13 @@
+Change Component Footprint: Designator=C7 Old Footprint=CAP-ALU-SMD-10.5x10.5 New Footprint=CAP-ALU-SMD-8.3
+Change Component Comment : Designator=C7 Old Comment=470uF/35V New Comment=100uf/50V
+Added Component: Designator=C15(CAP-ALU-SMD-8.3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "POLAR0.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=7V6_ESP Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Member To Class: ClassName=Hard_Node Member=Component C15 100uF/50V
+Added Room: Name=Hard_Node

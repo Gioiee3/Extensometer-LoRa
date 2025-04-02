@@ -1,0 +1,42 @@
+Change Component Footprint: Designator=MPPT Old Footprint=JP2-C1T New Footprint=KF-128_2P
+Change Component Footprint: Designator=MPPT Old Footprint=JP2-C1T New Footprint=KF-128_2P
+Added Component: Designator=C22(CAP_0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RAD-0.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33p"; VariantName = "[No Variations]"
+Added Component: Designator=U5(Ra-02)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U6(Ra-02)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=3V3 Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=GND Pin=U5-1
+Added Pin To Net: NetName=GND Pin=U5-2
+Added Pin To Net: NetName=3V3_ESP Pin=U5-3
+Added Pin To Net: NetName=ESP_RST Pin=U5-4
+Added Pin To Net: NetName=ESP_DIO0 Pin=U5-5
+Added Pin To Net: NetName=GND Pin=U5-9
+Added Pin To Net: NetName=ESP_CLK Pin=U5-12
+Added Pin To Net: NetName=ESP_MISO Pin=U5-13
+Added Pin To Net: NetName=ESP_MOSI Pin=U5-14
+Added Pin To Net: NetName=ESP_CS Pin=U5-15
+Added Pin To Net: NetName=GND Pin=U5-16
+Added Pin To Net: NetName=GND Pin=U6-1
+Added Pin To Net: NetName=GND Pin=U6-2
+Added Pin To Net: NetName=3V3 Pin=U6-3
+Added Pin To Net: NetName=STM_RST Pin=U6-4
+Added Pin To Net: NetName=STM_DIO0 Pin=U6-5
+Added Pin To Net: NetName=GND Pin=U6-9
+Added Pin To Net: NetName=STM_CLK Pin=U6-12
+Added Pin To Net: NetName=STM_MISO Pin=U6-13
+Added Pin To Net: NetName=STM_MOSI Pin=U6-14
+Added Pin To Net: NetName=STM_CS Pin=U6-15
+Added Pin To Net: NetName=GND Pin=U6-16
+Added Member To Class: ClassName=Hard_Node Member=Component C22 10uF
+Added Member To Class: ClassName=Hard_Node Member=Component U5 Ra-02 LoRa
+Added Member To Class: ClassName=Hard_Node Member=Component U6 Ra-02 LoRa
+Added Room: Name=Hard_Node

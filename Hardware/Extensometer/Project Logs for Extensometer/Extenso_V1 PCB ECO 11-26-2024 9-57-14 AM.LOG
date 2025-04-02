@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=3V3_ESP Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Member To Class: ClassName=Hard_Node Member=Component C30 10uF
+Added Room: Name=Hard_Node
